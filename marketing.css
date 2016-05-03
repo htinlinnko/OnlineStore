@@ -1,0 +1,588 @@
+body
+{
+	/*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, Arial, 'Trebuchet MS', sans-serif;*/
+	font-family: Calibri, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	font-weight: normal; /*background-color: #F7F7F7;*/ /*background-color: #F5F5F5;*/
+	background-size: cover;
+	color: #333333;
+	margin: 0;
+	overflow: auto;
+}
+
+.listingButtonToolbar
+{
+	height: 30px;
+	vertical-align: middle;
+	-webkit-box-shadow: 0px 1px 5px #CCC;
+	-moz-box-shadow: 0px 1px 5px #CCC;
+	box-shadow: 0px 1px 5px #CCC;
+}
+
+.reportOrder
+{
+	font-weight: bold;
+	color: #06F;
+}
+
+hr {
+	border: 2px solid #DCDCDC;
+}
+
+img{
+	border: 0px solid #DCDCDC;
+}
+
+.infoMessage{
+	font-size: medium;
+	color: #006699;
+}
+
+.errorMessage{
+	font-size: medium;
+	color: orangered;
+}
+
+.noAccessTitle
+{
+	font-size: 60px;
+	letter-spacing: 1px; 
+	color: #A2B8E8;
+}
+
+.noAccessText{
+	font-size: large;
+	color: #333;	
+}
+
+.titleHeading
+{
+	font-size: large;
+	font-weight: bold;
+	color: #666666;
+	letter-spacing: 1px;
+	vertical-align: top;
+}
+
+.titleUserInformation{
+	font-size: medium;
+	color: #06F;
+	vertical-align: top;
+}
+
+.titleTable
+{
+	width: 100%;
+	padding: 0;
+	/*background: rgba(0,0,0,0.1);*/
+}
+
+.calendarTable
+{
+	width: 100%;
+	padding: 2px;
+	background-color: #FFFFFF;
+	border: 1px solid #DCDCDC;
+	/*background: rgba(255,255,255,0.3);*/
+}
+
+.titleRightPane
+{
+	text-align: right;
+	letter-spacing: 0.5px;
+	vertical-align: middle;
+	font-size: 18px;
+	/*border-bottom: 2px solid #F5F5F5;*/
+}
+
+.titleLeftPaneHeadingDrop
+{
+	text-align: left;
+	letter-spacing: 0.5px;
+	vertical-align: middle;
+	font-size: 20px;
+	-webkit-box-shadow: 0px 1px 5px #0066FF;
+	-moz-box-shadow: 0px 1px 5px #0066FF;
+	box-shadow: 0px 1px 5px #0066FF;
+	/*border-bottom: 2px solid #F5F5F5;*/
+}
+
+.titleLeftPaneHeading
+{
+	text-align: left;
+	letter-spacing: 0.5px;
+	vertical-align: middle;
+	font-size: 20px;
+	/*border-bottom: 2px solid #F5F5F5;*/
+}
+
+.titleLeftPane
+{
+	vertical-align: middle;
+	border-bottom: 3px solid #006699;
+	/*background-color: #006699;
+	color: #FFFFFF;*/
+	text-align: center;
+}
+
+.filterTable
+{
+	/*background-color: rgba(153, 153, 153, 0.3);*/
+}
+
+.filterinnerTable
+{
+	padding: 3px;
+	background: rgba(255,255,255,0.3);
+}
+
+.listingTable
+{
+	width: 100%;
+	padding: 3px;
+}
+
+.listingTableAlternatingRow
+{
+	background-color: #C9C992;
+}
+
+.trGridHeading
+{
+	background-color: #7F7F7F;
+	color: #000000;
+}
+
+.menuLeftPane
+{
+	background-color: #333333;
+	color: #FFFFFF;
+	height: 100%;
+}
+
+	.menuLeftPane a:current a:clicked
+	{
+		background-color: #333333;
+		color: #33CCCC;
+	}
+
+.tableCol
+{
+	width: 25%;
+	vertical-align: top;
+	text-align: left;
+}
+
+.tableCol50
+{
+	width: 25%;
+	vertical-align: top;
+	text-align: left;
+}
+
+h4
+{
+	font-weight: normal;
+	font-size: large;
+}
+
+.rightButtonPane
+{
+	text-align: right;
+	vertical-align: middle;
+}
+
+.textAreaStyle
+{
+	font-family: Calibri, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	width: 80%;
+}
+
+.textBoxStyle
+{
+	font-family: Calibri, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	width: 80%;
+}
+
+.dropDownStyle
+{
+	font-family: Calibri, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	width: 81%;
+}
+
+.listBoxStyle
+{
+	font-family: Calibri, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	width: 81%;
+}
+
+.commentsLowerStyle
+{
+	font-family: Calibri, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	color: #5f5f5f;
+}
+
+.calendarHeader
+{
+	text-align: center;
+	vertical-align: middle;
+	height: 20px;
+	font-weight: bold;
+}
+
+.calendarData
+{
+	text-align: left;
+	vertical-align: top;
+	height: 130px;
+	width: 180px;
+	border: 1px solid #C0C0C0;
+}
+
+.buttonStyle
+{
+	text-align: center;
+	height: 25px;
+	width: 70px;
+	border: 1px solid #C0C0C0;
+	background-color: #ffffff;
+}
+
+	.buttonStyle:hover
+	{
+		text-align: center;
+		height: 25px;
+		width: 70px;
+		border: 1px solid #0066ff;
+		background-color: #F9F9F9; /*#E2E2E2*/
+		-webkit-box-shadow: 0px 0px 3px #0066ff;
+		-moz-box-shadow: 0px 0px 3px #0066ff;
+		box-shadow: 0px 0px 3px #0066ff;
+		border-radius: 2px;
+	}
+
+.gridHeaderStyle
+{
+	border: 1px solid #DCDCDC;
+	font-family: Calibri, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	color: #0066ff;
+	/*background-image: url('../Images/grid_popup_bg_Grey.gif');*/
+	/*background-image: url('../Images/SilverGradientWB.png');*/
+	background-color: #F5F5F5;
+	background-repeat: repeat-x;
+	background-position: left;
+	border-bottom: 2px solid #0066ff;
+	height: 30px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.gridRowStyle
+{
+	font-family: Calibri, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	border: 1px solid #DCDCDC;
+	color: #000000;
+	height: 25px;
+	vertical-align: middle;
+}
+
+.emptyGridRowStyle
+{
+	font-family: Calibri, Arial, 'Trebuchet MS' , sans-serif;
+	font-size: 14px;
+	border: 1px solid #DCDCDC;
+	color: #CC0000;
+	font-weight: bold;
+	height: 25px;
+	vertical-align: middle;
+}
+
+.gridAlternatingRowStyle
+{
+	font-family: Calibri, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	color: #000000;
+	border: 1px solid #DCDCDC;
+	background-color: #F7F7F7;
+	height: 25px;
+	vertical-align: middle;
+}
+
+.gridRowPagerStyle
+{
+	font-family: Calibri, Arial, 'Trebuchet MS' , sans-serif;
+	font-size: medium;
+	border: 1px solid #DCDCDC;
+	border-top: 2px solid #0066ff;
+	border-bottom: 2px solid #0066ff;
+	background-color: #F5F5F5;
+	padding: 3px;
+	height: 30px;
+	vertical-align: middle;
+	letter-spacing: 1px;
+}
+
+.modelPopupBackground
+{
+	/*background-color: #F3F1F1;*/
+	background-color: #333;
+	opacity: 0.2; /* Apply all Webkit */
+	filter: alpha(opacity=20); /* ie 8 and above */
+}
+
+.modelPopupSecondBackground
+{
+	background-color: #333;
+	opacity: 0.2; /* Apply all Webkit */
+	filter: alpha(opacity=20); /* ie 8 and above */
+	/*background-color: #F3F1F1;
+	opacity: 0.1; 
+	filter: alpha(opacity=10); */
+}
+
+.popupHeaderStyle
+{
+	font-family: Calibri, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	height: 30px;
+	color: #FFFFFF;
+	background-color: #0066ff;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #999999;
+}
+
+.popupPanelStyle
+{
+	border: 1px solid #DCDCDC;
+	-moz-box-shadow: 0 1px 10px #0066ff;
+	-webkit-box-shadow: 0 1px 10px #0066ff;
+	box-shadow: 0 1px 10px #0066ff;
+	border-radius: 5px;
+	/*background-color: #fcfbfb;*/
+	background-color: #FFFFFF;
+	opacity: 0.93; /* Apply all Webkit */
+	filter: alpha(opacity=95); /* ie 8 and above */
+}
+
+.popupSecondPanelStyle
+{
+	border: 1px solid #DCDCDC;
+	-moz-box-shadow: 0 1px 10px #333;
+	-webkit-box-shadow: 0 1px 10px #333;
+	box-shadow: 0 1px 10px #333;
+	border-radius: 5px;
+	/*background-color: #fcfbfb;*/
+	background-color: #FFFFFF;
+	opacity: 0.93; /* Apply all Webkit */
+	filter: alpha(opacity=95); /* ie 8 and above */
+}
+
+.coiBoxHeader
+{
+	font-family: Calibri, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	color: #0066ff;
+	background-color: #F5F5F5;
+	border-bottom: 2px solid #0066FF;
+	height: 30px;
+	text-align: left;
+	vertical-align: middle;
+	/*-moz-box-shadow: 0 0 1px #0066ff;
+	-webkit-box-shadow: 0 0 1px #0066ff;
+	box-shadow: 0 0 1px #0066ff;*/
+}
+
+.accordionBarStyle
+{
+	width: 100%;
+	height: 25px;
+	vertical-align: middle;
+	background: -webkit-linear-gradient(#F9F9F9, #DCDCDC);
+	background: -o-linear-gradient(#F9F9F9, #DCDCDC);
+	background: -moz-linear-gradient(#F9F9F9, #DCDCDC);
+	background: linear-gradient(#F9F9F9, #DCDCDC);
+}
+
+.accordionInnerText
+{
+	color: #0066ff;
+	font-size: medium;
+	height: 25px;
+	vertical-align: middle;
+}
+
+.submitButtonStyle
+{
+	text-align: center;
+	height: 25px;
+	width: 70px;
+	border: 1px solid #C0C0C0;
+	background-color: #DCDCDC;
+}
+
+	.submitButtonStyle:hover
+	{
+		text-align: center;
+		height: 25px;
+		width: 70px;
+		border: 1px solid #0066ff;
+		background-color: #F9F9F9; /*#E2E2E2*/
+		-webkit-box-shadow: 0px 0px 1px #0066ff;
+		-moz-box-shadow: 0px 0px 1px #0066ff;
+		box-shadow: 0px 0px 1px #0066ff;
+		border-radius: 2px;
+	}
+
+.requiredFieldText{
+	font-family: Calibri, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	color: orangered;
+}
+
+.callOutExtenderStyle{
+	font-family: Calibri, Arial, 'Trebuchet MS', sans-serif;
+	border: 1px solid #333333;
+	background-color: orangered;
+	width: 300px;
+	font-size: 14px;
+}
+
+.callOutHighlightStyle {
+	border : 2px solid OrangeRed;
+}
+
+.masterContent
+{
+	overflow: scroll;
+}
+
+.footerTable{
+	bottom: 0;
+	position: relative;
+	padding: 5px;
+	width: 100%;
+	background-color: #F4F4F4;
+	border-top: 2px solid #DCDCDC;
+}
+
+.footerLabel
+{
+	width: 120px;
+}
+
+.footerControlName
+{
+	width: 170px;
+	font-weight: bold;
+}
+
+.footerControl
+{
+	width: 170px;
+}
+
+table.tableHeadingStyle
+{
+	width: 100%;
+	padding: 5px;
+	background-color: #E5E5E5;
+}
+
+.listviewStyle{
+	width: 100%;
+	height: 400px;
+	overflow: auto;
+}
+
+.listviewGroupStyle
+{
+	border: 1px solid #DCDCDC;
+	background-color: #F9F9F9;
+	font-weight: 500;	
+}
+
+.listviewGroupSeparatorStyle {
+	border: 1px solid #0066FF;
+}
+
+.statusTable
+{
+	text-align: center;
+	vertical-align: middle;
+	color: #333;
+	background-color: #FFF;
+	-webkit-box-shadow: 0px 0px 3px #0066ff;
+		-moz-box-shadow: 0px 0px 3px #0066ff;
+		box-shadow: 0px 0px 3px #0066ff;
+	border: 1px solid #DCDCDC;
+}
+
+/* JQUERY DIALOG - start */
+.ui-widget {
+    font-family: Calibri, Arial, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+	opacity: 0.8;
+	/*-webkit-box-shadow: 0px 0px 3px #0066ff;
+	-moz-box-shadow: 0px 0px 3px #0066ff;
+	box-shadow: 0px 0px 3px #0066ff;*/
+}
+
+.ui-widget-content
+{
+	background: #F9F9F9;
+	border: 1px solid #CCE0FF;
+	color: #222222;
+	padding: 5px;
+}
+
+.ui-dialog {
+    left: 500px;
+	right: 20px;
+    outline: 0 none;
+    padding: 0 !important;
+    position: absolute;
+    top: 20px;
+}
+
+#success {
+    padding: 0;
+    margin: 0; 
+}
+
+.ui-dialog .ui-dialog-content {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    overflow: auto;
+    position: relative;
+    padding: 5px;
+}
+
+.ui-widget-header {
+    background: #CCE0FF;
+	border: 1px solid #CCE0FF;
+    color: #000;
+    font-weight: normal;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    padding: 5px;
+    position: relative;
+}
+
+.ui-dialog-titlebar-close {
+  visibility: hidden;
+}
+
+/* JQUERY DIALOG - end */

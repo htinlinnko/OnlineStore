@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ActivityReport.master.cs" Inherits="ActivityReport" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="~/Content/marketing.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="frmActivityReportMaster" runat="server">
+        <table style="width: 100%; padding: 3px;" class="titleLeftPaneHeadingDrop">
+            <tr>
+                <td style="width: 1%" />
+                <td style="width: 87%;">Customer Services Activity Report</td>
+                <td style="width: 10%; text-align:center;" class="titleUserInformation">
+                    <asp:Literal ID="ltrUserName" runat="server" />
+                </td>
+                <td style="width: 1%" />
+            </tr>
+        </table>
+        <table style="width: 100%; padding: 3px;">
+            <tr>
+                <td style="width: 1%" />
+                <td style="width: 98%;">
+                    <asp:ContentPlaceHolder ID="mainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td style="width: 1%" />
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
