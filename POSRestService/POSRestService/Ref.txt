@@ -1,0 +1,4 @@
+﻿http://www.codeproject.com/Articles/255684/Create-and-Consume-RESTFul-Service-in-NET-Framewor
+https://blogs.msdn.microsoft.com/martinkearn/2015/01/05/introduction-to-rest-and-net-web-api/
+http://www.asp.net/web-api/overview/older-versions/build-restful-apis-with-aspnet-web-api
+https://www.google.com.sg/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=restful%20web%20service%20.net
