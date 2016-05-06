@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="POSRestService.pos_code_service" CodeBehind="pos_code_service.svc.cs" %>

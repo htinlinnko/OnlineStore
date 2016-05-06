@@ -1,0 +1,6 @@
+C:\Users\htinlinnko\Documents\Personal\OnlineStore\POSRestService\POSRestService\bin\POSRestService.dll.config
+C:\Users\htinlinnko\Documents\Personal\OnlineStore\POSRestService\POSRestService\bin\POSRestService.dll
+C:\Users\htinlinnko\Documents\Personal\OnlineStore\POSRestService\POSRestService\bin\POSRestService.pdb
+C:\Users\htinlinnko\Documents\Personal\OnlineStore\POSRestService\POSRestService\obj\Debug\POSRestService.csprojResolveAssemblyReference.cache
+C:\Users\htinlinnko\Documents\Personal\OnlineStore\POSRestService\POSRestService\obj\Debug\POSRestService.dll
+C:\Users\htinlinnko\Documents\Personal\OnlineStore\POSRestService\POSRestService\obj\Debug\POSRestService.pdb
