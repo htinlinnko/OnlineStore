@@ -12,16 +12,24 @@ namespace POSRestService
     public interface Ipos_code
     {
         [OperationContract]
-        [WebGet(ResponseFormat =WebMessageFormat.Json)]
-        List<pos_code> GetPOSCode();
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        pos_code[] GetPOSCode(string userId, string password);
 
         [OperationContract]
-        [WebInvoke(Method ="POST", BodyStyle =WebMessageBodyStyle.Wrapped, UriTemplate ="")]
+        [WebInvoke(Method ="PUT", BodyStyle =WebMessageBodyStyle.WrappedRequest)]
         void InsertPOSCode(string title, string first_name, string last_name, string display_order, string profile_name,
-            Guid uqid, string mobile_no, string email, string pwd, bool active, string created_by);
+            string mobile_no, string email, string pwd, bool active, string created_by, string userId, string password);
 
         [OperationContract]
-        [WebGet(ResponseFormat =WebMessageFormat.Json)]
-        string GetHelloCode();
+        [WebInvoke(Method = "PUT")]
+        void InsertTest(string test);
+
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        string GetHelloCode(string userId, string password);
+
+        [OperationContract]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        string[] GetAnotherCode(string userId, string password);
     }
 }
