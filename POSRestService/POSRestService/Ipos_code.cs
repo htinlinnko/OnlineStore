@@ -21,7 +21,7 @@ namespace POSRestService
             string mobile_no, string email, string pwd, bool active, string created_by, string userId, string password);
 
         [OperationContract]
-        [WebInvoke(Method = "PUT")]
+        [WebInvoke(Method = "PUT", RequestFormat =WebMessageFormat.Json)]
         void InsertTest(string test);
 
         [OperationContract]
