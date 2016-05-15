@@ -24,11 +24,34 @@
                     }
                 });
             }
+
+            function getAnotherFunction() {
+                var paraString = $('#txtHello').val();
+
+                var parValue = [
+                    { parameter1: paraString }
+                ]
+
+                $.ajax({
+                    type: "GET",
+                    url: "/POS.SVC/getTestParameter",
+                    data: {parameter1: paraString},
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (response) {
+                        alert(response.d);
+                    },
+                    error: function (response) {
+                        alert(response.d);
+                    }
+                });
+            }
         </script>
 </head>
 <body>
     <form id="form1" runat="server">
         <asp:Button ID="btnGetHello" runat="server" Text="Get Hello" OnClientClick="getHello(); return false;" />
+        <asp:Button ID="btnAnotherButton" runat="server" Text="Another" OnClientClick="getAnotherFunction(); return false;" />
         <asp:TextBox ID="txtHello" runat="server" />
     </form>
 </body>

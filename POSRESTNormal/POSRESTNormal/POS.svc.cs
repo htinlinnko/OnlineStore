@@ -30,6 +30,19 @@ namespace POSRESTNormal
         {
             return "Hello World";
         }
+
+        [OperationContract, WebGet()]
+        public string getTestParameter(string parameter1)
+        {
+            try
+            {
+                return parameter1;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
         // Add more operations here and mark them with [OperationContract]
     }
 }
