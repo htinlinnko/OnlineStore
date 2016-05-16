@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>Testing</title>
+	<script src="./Scripts/jquery-1.8.2.min.js"></script>
+	<script language="javascript">
+		function onButtonClick() {
+			$.ajax({
+				type: "GET",
+                url: "http://localhost:18239/POS_Code.svc/GetHello",
+                    data: {userId: "mouseInputUser", password: "mouseCrystalTecl1234"},
+                    processData: true,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    timeout: 20000,
+					success: function(result) {
+						document.getElementById('txtData').value = result;
+					}
+					
+			});
+		}
+		
+		function onButtonSave() {
+			$.ajax({
+				type: "POST",
+                url: "http://localhost:18239/pos_code_service.svc/InsertPOSCode",
+                    data: {title: "Mr", first_name: "AB", last_name: "CD", display_order: 1, profile_name: "ABCD", mobile_no: "456789", email: "abc@dc.com"
+					, pwd: "abc", active: "True", created_by: "user", userId: "mouseInputUser", password: "mouseCrystalTecl1234"},
+                    processData: true,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    timeout: 20000,
+					success: function(result) {
+						alert('success');
+					}					
+			});
+		}
+		
+		function onButtonTest() {
+			$.ajax({
+				type: "POST",
+                url: "http://localhost:18239/POS_Code.svc/InsertTest",
+                    data: {test: "TestData"},
+                    processData: true,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "jsondata",
+                    timeout: 20000,
+					success: function(response) {
+						alert('success');
+					},
+					error: function(response) {
+						alert(response.status + ' ' + response.statusText);
+					}
+			});
+		}
+	
+	</script>
+</head>
+<body>
+	<input id="btnGet" value="Get" type="button" onclick="onButtonClick();" />
+	<input id="txtData" type="text" />
+	<br>
+	<input id="btnSubmitData" value="Save" type="button" onclick="onButtonSave();" />
+	
+	<input id="btnSubmitTest" value="Save Test" type="button" onclick="onButtonTest();" />
+</body>
