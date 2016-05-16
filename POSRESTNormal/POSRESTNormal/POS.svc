@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="POSRESTNormal.POS" CodeBehind="POS.svc.cs" %>
