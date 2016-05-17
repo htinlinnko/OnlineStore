@@ -43,6 +43,9 @@ namespace WCFServiceLibrary.main_info
         [DataMember]
         Guid id_guid;
 
+        [DataMember]
+        DateTime created_on;
+
         public string First_name
         {
             get
@@ -118,6 +121,19 @@ namespace WCFServiceLibrary.main_info
             set
             {
                 id_guid = value;
+            }
+        }
+
+        public DateTime Created_on
+        {
+            get
+            {
+                return created_on;
+            }
+
+            set
+            {
+                created_on = value;
             }
         }
     }

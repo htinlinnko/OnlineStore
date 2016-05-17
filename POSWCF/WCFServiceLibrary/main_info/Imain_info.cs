@@ -7,6 +7,19 @@ using System.Threading.Tasks;
 
 namespace WCFServiceLibrary.main_info
 {
+    /// <summary>
+    /// *
+    /// *
+    /// Created by : HTIN LINN KO
+    /// Created on : 17 May 2016
+    /// Environment: VS 2015
+    /// -----------------------------------------------------------------------
+    /// This interface is for Service, available method expose to public to consume.
+    /// 
+    /// ### ANY CHANGES TO THIS, PLEASE UPDATE ACCORDINGLY ###
+    /// *
+    /// *
+    /// </summary>
     [ServiceContract]
     interface Imain_info
     {
