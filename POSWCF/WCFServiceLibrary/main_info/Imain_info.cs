@@ -39,6 +39,9 @@ namespace WCFServiceLibrary.main_info
         string removeMainUserInformation(string _emailAddress, Guid _guid);
 
         [OperationContract]
+        string setTestData(string _testData);
+
+        [OperationContract]
         string getHello(string _para);
     }
 }

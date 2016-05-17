@@ -4,3 +4,4 @@ C:\Users\htinlinnko\Documents\Personal\OnlineStore\POSWCF\WCFServiceLibrary\bin\
 C:\Users\htinlinnko\Documents\Personal\OnlineStore\POSWCF\WCFServiceLibrary\bin\Debug\WCFServiceLibrary.pdb
 C:\Users\htinlinnko\Documents\Personal\OnlineStore\POSWCF\WCFServiceLibrary\obj\Debug\WCFServiceLibrary.dll
 C:\Users\htinlinnko\Documents\Personal\OnlineStore\POSWCF\WCFServiceLibrary\obj\Debug\WCFServiceLibrary.pdb
+C:\Users\htinlinnko\Documents\Personal\OnlineStore\POSWCF\WCFServiceLibrary\bin\Debug\MySql.Data.dll
