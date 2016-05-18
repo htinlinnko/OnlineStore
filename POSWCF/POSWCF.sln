@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServiceLibrary", "WCFServiceLibrary\WCFServiceLibrary.csproj", "{4E804282-DAD2-41AA-B8EE-0CCC74C121BF}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "POSWCFWeb", "..\POSWCFWeb\", "{033DBB65-DE90-4EA9-B886-074873D6F1CB}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{4e804282-dad2-41aa-b8ee-0ccc74c121bf}|WCFServiceLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53226"
+		Debug.AspNetCompiler.PhysicalPath = "..\POSWCFWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53226\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53226"
+		Release.AspNetCompiler.PhysicalPath = "..\POSWCFWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53226\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53226"
+		SlnRelativePath = "..\POSWCFWeb\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E804282-DAD2-41AA-B8EE-0CCC74C121BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E804282-DAD2-41AA-B8EE-0CCC74C121BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E804282-DAD2-41AA-B8EE-0CCC74C121BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E804282-DAD2-41AA-B8EE-0CCC74C121BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{033DBB65-DE90-4EA9-B886-074873D6F1CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{033DBB65-DE90-4EA9-B886-074873D6F1CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{033DBB65-DE90-4EA9-B886-074873D6F1CB}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{033DBB65-DE90-4EA9-B886-074873D6F1CB}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
