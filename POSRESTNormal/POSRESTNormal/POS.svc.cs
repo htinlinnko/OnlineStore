@@ -6,6 +6,9 @@ using System.ServiceModel;
 using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
 using System.Text;
+using System.Data;
+using MySql.Data.MySqlClient;
+using System.Configuration;
 
 namespace POSRESTNormal
 {
@@ -13,6 +16,8 @@ namespace POSRESTNormal
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class POS
     {
+        string connString = ConfigurationManager.AppSettings.Get("MySQLConnString");
+
         // To use HTTP GET, add [WebGet] attribute. (Default ResponseFormat is WebMessageFormat.Json)
         // To create an operation that returns XML,
         //     add [WebGet(ResponseFormat=WebMessageFormat.Xml)],
@@ -42,6 +47,33 @@ namespace POSRESTNormal
             {
                 throw ex;
             }
+        }
+
+        [OperationContract, WebGet()]
+        public string insertData(string dataValue)
+        {
+            MySqlConnection sqlConnection = new MySqlConnection(connString);
+            string resultData = "";
+
+            try
+            {
+                MySqlCommand sqlCommand = new MySqlCommand("INSERT INTO test VALUES (@test)", sqlConnection);
+                sqlCommand.Parameters.AddWithValue("@test", dataValue);
+
+                sqlConnection.Open();
+                sqlCommand.ExecuteNonQuery();
+                resultData = "Success";
+            }
+            catch(Exception ex)
+            {
+                resultData = ex.Message;
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
+
+            return resultData;
         }
         // Add more operations here and mark them with [OperationContract]
     }

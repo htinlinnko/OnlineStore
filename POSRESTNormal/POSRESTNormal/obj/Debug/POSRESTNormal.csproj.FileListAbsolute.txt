@@ -18,3 +18,4 @@ C:\Users\htinlinnko\Documents\Personal\OnlineStore\POSRESTNormal\POSRESTNormal\b
 C:\Users\htinlinnko\Documents\Personal\OnlineStore\POSRESTNormal\POSRESTNormal\obj\Debug\POSRESTNormal.csprojResolveAssemblyReference.cache
 C:\Users\htinlinnko\Documents\Personal\OnlineStore\POSRESTNormal\POSRESTNormal\obj\Debug\POSRESTNormal.dll
 C:\Users\htinlinnko\Documents\Personal\OnlineStore\POSRESTNormal\POSRESTNormal\obj\Debug\POSRESTNormal.pdb
+C:\Users\htinlinnko\Documents\Personal\OnlineStore\POSRESTNormal\POSRESTNormal\bin\MySql.Data.dll
