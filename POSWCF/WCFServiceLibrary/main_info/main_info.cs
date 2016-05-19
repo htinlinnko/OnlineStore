@@ -47,6 +47,9 @@ namespace WCFServiceLibrary.main_info
         int? send_email;
 
         [DataMember]
+        int? pdpa_declare;
+
+        [DataMember]
         DateTime created_on;
 
         public string First_name
@@ -150,6 +153,19 @@ namespace WCFServiceLibrary.main_info
             set
             {
                 send_email = value;
+            }
+        }
+
+        public int? Pdpa_declare
+        {
+            get
+            {
+                return pdpa_declare;
+            }
+
+            set
+            {
+                pdpa_declare = value;
             }
         }
     }

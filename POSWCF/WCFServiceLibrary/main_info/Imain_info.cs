@@ -30,10 +30,11 @@ namespace WCFServiceLibrary.main_info
         main_info getMainUserInformationByEmailAndPassword(string _emailAddress, string _password);
 
         [OperationContract]
-        string setMainUserInformation(string _firstName, string _lastName, string _emailAddress);
+        string setMainUserInformation(string _firstName, string _lastName, string _emailAddress, int _pdpa);
 
         [OperationContract]
-        string updateMainUserInformation(string _firstName, string _lastName, string _emailAddress, Guid _guid, string _password);
+        string updateMainUserInformation(string _firstName, string _lastName, string _emailAddress, Guid _guid
+            , string _password, int _pdpa);
 
         [OperationContract]
         string removeMainUserInformation(string _emailAddress, Guid _guid);

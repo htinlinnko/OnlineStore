@@ -38,6 +38,7 @@ namespace WCFServiceLibrary.main_info
                         mInfo.Email = dReader["email"].ToString();
                         mInfo.Password = dReader.IsDBNull(4) ? dReader["password"].ToString() : "";
                         mInfo.Send_email = dReader.IsDBNull(5) ? (int?)null : int.Parse(dReader["send_email"].ToString());
+                        mInfo.Pdpa_declare = dReader.IsDBNull(6) ? (int?)null : int.Parse(dReader["pdpa_declare"].ToString());
                         mInfo.Created_on = DateTime.Parse(dReader["created_on"].ToString());
                     }
                 }
@@ -73,6 +74,7 @@ namespace WCFServiceLibrary.main_info
                         mInfo.Email = dReader["email"].ToString();
                         mInfo.Password = dReader.IsDBNull(4) ? dReader["password"].ToString() : "";
                         mInfo.Send_email = dReader.IsDBNull(5) ? (int?)null : int.Parse(dReader["send_email"].ToString());
+                        mInfo.Pdpa_declare = dReader.IsDBNull(6) ? (int?)null : int.Parse(dReader["pdpa_declare"].ToString());
                         mInfo.Created_on = DateTime.Parse(dReader["created_on"].ToString());
                     }
                 }
@@ -89,7 +91,7 @@ namespace WCFServiceLibrary.main_info
             throw new NotImplementedException();
         }
 
-        public string setMainUserInformation(string _firstName, string _lastName, string _emailAddress)
+        public string setMainUserInformation(string _firstName, string _lastName, string _emailAddress, int _pdpa)
         {
             MySqlConnection sqlConnection = new MySqlConnection(connString);
 
@@ -97,11 +99,12 @@ namespace WCFServiceLibrary.main_info
             {
                 int tempPassword = new Random().Next();
 
-                MySqlCommand sqlCommand = new MySqlCommand("INSERT INTO main_info(first_name, last_name, email, m_guid, password, created_on) VALUES (@fn, @ln, @em, @guid, @pwd, NOW())", sqlConnection);
+                MySqlCommand sqlCommand = new MySqlCommand("INSERT INTO main_info(first_name, last_name, email, m_guid, password, pdpa_declare, created_on) VALUES (@fn, @ln, @em, @guid, @pwd, @pdpa, NOW())", sqlConnection);
                 sqlCommand.Parameters.AddWithValue("@fn", _firstName);
                 sqlCommand.Parameters.AddWithValue("@ln", _lastName);
                 sqlCommand.Parameters.AddWithValue("@em", _emailAddress);
                 sqlCommand.Parameters.AddWithValue("@guid", Guid.NewGuid().ToString());
+                sqlCommand.Parameters.AddWithValue("@pdpa", _pdpa);
                 sqlCommand.Parameters.AddWithValue("@pwd", tempPassword.ToString());
                 sqlConnection.Open();
                 sqlCommand.ExecuteNonQuery();
@@ -145,17 +148,20 @@ namespace WCFServiceLibrary.main_info
             finally { sqlConnection.Close(); }
         }
 
-        public string updateMainUserInformation(string _firstName, string _lastName, string _emailAddress, Guid _guid, string _password)
+        public string updateMainUserInformation(string _firstName, string _lastName, string _emailAddress, Guid _guid
+            , string _password, int _pdpa)
         {
             MySqlConnection sqlConnection = new MySqlConnection(connString);
 
             try
             {
-                MySqlCommand sqlCommand = new MySqlCommand("UPDATE main_info SET first_name = @fn, last_name = @ln WHERE m_guid = @guid and email = @em", sqlConnection);
+                MySqlCommand sqlCommand = new MySqlCommand("UPDATE main_info SET first_name = @fn, last_name = @ln, pdpa_declare = @pdpa " +  
+                    " WHERE m_guid = @guid and email = @em", sqlConnection);
                 sqlCommand.Parameters.AddWithValue("@fn", _firstName);
                 sqlCommand.Parameters.AddWithValue("@ln", _lastName);
                 sqlCommand.Parameters.AddWithValue("@em", _emailAddress);
                 sqlCommand.Parameters.AddWithValue("@guid", _guid.ToString());
+                sqlCommand.Parameters.AddWithValue("@pdpa", _pdpa);
                 sqlConnection.Open();
                 sqlCommand.ExecuteNonQuery();
                 return "Success";
