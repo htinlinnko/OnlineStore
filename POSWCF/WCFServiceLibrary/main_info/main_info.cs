@@ -44,6 +44,9 @@ namespace WCFServiceLibrary.main_info
         Guid id_guid;
 
         [DataMember]
+        int? send_email;
+
+        [DataMember]
         DateTime created_on;
 
         public string First_name
@@ -134,6 +137,19 @@ namespace WCFServiceLibrary.main_info
             set
             {
                 created_on = value;
+            }
+        }
+
+        public int? Send_email
+        {
+            get
+            {
+                return send_email;
+            }
+
+            set
+            {
+                send_email = value;
             }
         }
     }

@@ -39,6 +39,12 @@ namespace WCFServiceLibrary.main_info
         string removeMainUserInformation(string _emailAddress, Guid _guid);
 
         [OperationContract]
+        string updateEmailSendStatus(bool _sendEmail);
+
+        [OperationContract]
+        string updatePassword(string _password, Guid _guid, string _emailAddress);
+
+        [OperationContract]
         string setTestData(string _testData);
 
         [OperationContract]
