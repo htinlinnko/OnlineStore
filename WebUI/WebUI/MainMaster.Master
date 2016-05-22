@@ -5,14 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <%--<link href="./style/marketing.css" rel="stylesheet" type="text/css" />--%>
+    <link href="./style/site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
-        <table>
+        <table class="titleLeftPaneHeadingDrop" style="width: 100%; margin: 0;">
             <tr>
-                <td>POS Service</td>
+                <td class="titleHeading">POS UI</td>
             </tr>
         </table>
         <asp:ContentPlaceHolder ID="mainContent" runat="server">

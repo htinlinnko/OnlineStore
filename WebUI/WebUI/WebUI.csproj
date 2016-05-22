@@ -48,6 +48,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -66,8 +68,23 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="image\WebsiteBackground.png" />
     <Content Include="packages.config" />
     <Content Include="MainMaster.Master" />
+    <Content Include="script\jquery-1.10.2.min.map" />
+    <None Include="Service References\main_infoService\main_infoService.wsdl" />
+    <None Include="Service References\main_infoService\main_infoService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\main_infoService\main_infoService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\main_infoService\main_infoService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\main_infoService\WebUI.main_infoService.main_info.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -78,6 +95,29 @@
   <ItemGroup>
     <Content Include="default.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="script\bootstrap.js" />
+    <Content Include="script\bootstrap.min.js" />
+    <None Include="script\jquery-1.10.2.intellisense.js" />
+    <Content Include="script\jquery-1.10.2.js" />
+    <Content Include="script\jquery-1.10.2.min.js" />
+    <None Include="script\jquery.validate-vsdoc.js" />
+    <Content Include="script\jquery.validate.js" />
+    <Content Include="script\jquery.validate.min.js" />
+    <Content Include="script\jquery.validate.unobtrusive.js" />
+    <Content Include="script\jquery.validate.unobtrusive.min.js" />
+    <Content Include="script\modernizr-2.6.2.js" />
+    <Content Include="script\respond.js" />
+    <Content Include="script\respond.min.js" />
+    <None Include="script\_references.js" />
+    <None Include="Service References\main_infoService\main_infoService.disco" />
+    <None Include="Service References\main_infoService\configuration91.svcinfo" />
+    <None Include="Service References\main_infoService\configuration.svcinfo" />
+    <None Include="Service References\main_infoService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="style\marketing.css" />
+    <Content Include="style\Site.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +143,17 @@
     <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Service References\main_infoService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\main_infoService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/POSWCFWeb/main_infoService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFServiceLibrary.main_info" />
+  <xs:import schemaLocation="http://localhost/POSWCFWeb/main_infoService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="getMainUserInformationByEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_emailAddress" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMainUserInformationByEmailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WCFServiceLibrary.main_info" minOccurs="0" name="getMainUserInformationByEmailResult" nillable="true" type="q1:main_info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMainUserInformationByEmailAndPassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_emailAddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMainUserInformationByEmailAndPasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WCFServiceLibrary.main_info" minOccurs="0" name="getMainUserInformationByEmailAndPasswordResult" nillable="true" type="q2:main_info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setMainUserInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_firstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_lastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_emailAddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_pdpa" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setMainUserInformationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="setMainUserInformationResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateMainUserInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_firstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_lastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_emailAddress" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_guid" type="q3:guid" />
+        <xs:element minOccurs="0" name="_password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_pdpa" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateMainUserInformationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateMainUserInformationResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="removeMainUserInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_emailAddress" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_guid" type="q4:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="removeMainUserInformationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="removeMainUserInformationResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateEmailSendStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_sendEmail" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateEmailSendStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateEmailSendStatusResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updatePassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_password" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="_guid" type="q5:guid" />
+        <xs:element minOccurs="0" name="_emailAddress" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updatePasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updatePasswordResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setTestData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_testData" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setTestDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="setTestDataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getHello">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_para" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getHelloResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getHelloResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

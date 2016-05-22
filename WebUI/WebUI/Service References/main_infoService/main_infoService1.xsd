@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/WCFServiceLibrary.main_info" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCFServiceLibrary.main_info" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/POSWCFWeb/main_infoService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="main_info">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="created_on" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="decrypt_key" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="first_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id_guid" type="ser:guid" />
+      <xs:element minOccurs="0" name="last_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pdpa_declare" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="send_email" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="main_info" nillable="true" type="tns:main_info" />
+</xs:schema>

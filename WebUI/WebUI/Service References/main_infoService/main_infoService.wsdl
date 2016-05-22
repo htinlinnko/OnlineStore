@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="main_infoService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/POSWCFWeb/main_infoService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/POSWCFWeb/main_infoService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/POSWCFWeb/main_infoService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFServiceLibrary.main_info" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Imain_info_getMainUserInformationByEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMainUserInformationByEmail" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_getMainUserInformationByEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMainUserInformationByEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_getMainUserInformationByEmailAndPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMainUserInformationByEmailAndPassword" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_getMainUserInformationByEmailAndPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMainUserInformationByEmailAndPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_setMainUserInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:setMainUserInformation" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_setMainUserInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:setMainUserInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_updateMainUserInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateMainUserInformation" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_updateMainUserInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateMainUserInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_removeMainUserInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:removeMainUserInformation" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_removeMainUserInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removeMainUserInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_updateEmailSendStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateEmailSendStatus" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_updateEmailSendStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateEmailSendStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_updatePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatePassword" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_updatePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_setTestData_InputMessage">
+    <wsdl:part name="parameters" element="tns:setTestData" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_setTestData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:setTestDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_getHello_InputMessage">
+    <wsdl:part name="parameters" element="tns:getHello" />
+  </wsdl:message>
+  <wsdl:message name="Imain_info_getHello_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getHelloResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Imain_info">
+    <wsdl:operation name="getMainUserInformationByEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/Imain_info/getMainUserInformationByEmail" message="tns:Imain_info_getMainUserInformationByEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Imain_info/getMainUserInformationByEmailResponse" message="tns:Imain_info_getMainUserInformationByEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMainUserInformationByEmailAndPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/Imain_info/getMainUserInformationByEmailAndPassword" message="tns:Imain_info_getMainUserInformationByEmailAndPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Imain_info/getMainUserInformationByEmailAndPasswordResponse" message="tns:Imain_info_getMainUserInformationByEmailAndPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="setMainUserInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/Imain_info/setMainUserInformation" message="tns:Imain_info_setMainUserInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Imain_info/setMainUserInformationResponse" message="tns:Imain_info_setMainUserInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateMainUserInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/Imain_info/updateMainUserInformation" message="tns:Imain_info_updateMainUserInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Imain_info/updateMainUserInformationResponse" message="tns:Imain_info_updateMainUserInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removeMainUserInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/Imain_info/removeMainUserInformation" message="tns:Imain_info_removeMainUserInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Imain_info/removeMainUserInformationResponse" message="tns:Imain_info_removeMainUserInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateEmailSendStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/Imain_info/updateEmailSendStatus" message="tns:Imain_info_updateEmailSendStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Imain_info/updateEmailSendStatusResponse" message="tns:Imain_info_updateEmailSendStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatePassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/Imain_info/updatePassword" message="tns:Imain_info_updatePassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Imain_info/updatePasswordResponse" message="tns:Imain_info_updatePassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="setTestData">
+      <wsdl:input wsaw:Action="http://tempuri.org/Imain_info/setTestData" message="tns:Imain_info_setTestData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Imain_info/setTestDataResponse" message="tns:Imain_info_setTestData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getHello">
+      <wsdl:input wsaw:Action="http://tempuri.org/Imain_info/getHello" message="tns:Imain_info_getHello_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Imain_info/getHelloResponse" message="tns:Imain_info_getHello_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Http" type="tns:Imain_info">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getMainUserInformationByEmail">
+      <soap:operation soapAction="http://tempuri.org/Imain_info/getMainUserInformationByEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMainUserInformationByEmailAndPassword">
+      <soap:operation soapAction="http://tempuri.org/Imain_info/getMainUserInformationByEmailAndPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setMainUserInformation">
+      <soap:operation soapAction="http://tempuri.org/Imain_info/setMainUserInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateMainUserInformation">
+      <soap:operation soapAction="http://tempuri.org/Imain_info/updateMainUserInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeMainUserInformation">
+      <soap:operation soapAction="http://tempuri.org/Imain_info/removeMainUserInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateEmailSendStatus">
+      <soap:operation soapAction="http://tempuri.org/Imain_info/updateEmailSendStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatePassword">
+      <soap:operation soapAction="http://tempuri.org/Imain_info/updatePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setTestData">
+      <soap:operation soapAction="http://tempuri.org/Imain_info/setTestData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getHello">
+      <soap:operation soapAction="http://tempuri.org/Imain_info/getHello" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="main_infoService">
+    <wsdl:port name="Http" binding="tns:Http">
+      <soap:address location="http://localhost/POSWCFWeb/main_infoService.svc/Http" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

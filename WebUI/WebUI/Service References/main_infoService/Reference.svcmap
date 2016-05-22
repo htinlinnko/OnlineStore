@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6afcdab2-bd59-4052-a63f-c52862150858" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/POSWCFWeb/main_infoService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="main_infoService.xsd" MetadataType="Schema" ID="70c2bd0f-077e-4dc2-844b-a8ebac5d53d1" SourceId="1" SourceUrl="http://localhost/POSWCFWeb/main_infoService.svc?xsd=xsd0" />
+    <MetadataFile FileName="main_infoService1.xsd" MetadataType="Schema" ID="bbeeb8e3-8986-4851-ba9d-0f5fc609f9ea" SourceId="1" SourceUrl="http://localhost/POSWCFWeb/main_infoService.svc?xsd=xsd2" />
+    <MetadataFile FileName="main_infoService2.xsd" MetadataType="Schema" ID="a8b25809-d509-4353-a4ee-ae13ea2419be" SourceId="1" SourceUrl="http://localhost/POSWCFWeb/main_infoService.svc?xsd=xsd1" />
+    <MetadataFile FileName="main_infoService.wsdl" MetadataType="Wsdl" ID="a739547d-555a-41d7-a82b-024ad7d74ff2" SourceId="1" SourceUrl="http://localhost/POSWCFWeb/main_infoService.svc?wsdl" />
+    <MetadataFile FileName="main_infoService.disco" MetadataType="Disco" ID="11619bfe-8766-4e92-8566-7461df082ec5" SourceId="1" SourceUrl="http://localhost/POSWCFWeb/main_infoService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
